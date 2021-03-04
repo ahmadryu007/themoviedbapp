@@ -18,10 +18,11 @@ class Utility {
         
     }
     
-    class func basicLoading(superView: UIView){
+    class func basicLoading(superView: UIView) {
         
         let activityIndicator = UIActivityIndicatorView()
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicator.tag = 1001
         
         superView.addSubview(activityIndicator)
         activityIndicator.centerXAnchor.constraint(equalTo: superView.centerXAnchor, constant: 0).isActive = true
@@ -30,5 +31,11 @@ class Utility {
         activityIndicator.widthAnchor.constraint(equalToConstant: 100).isActive = true
         activityIndicator.startAnimating()
         
+    }
+    
+    class func hideBasicLoading(superView: UIView) {
+        if let activityInticator = superView.viewWithTag(1001) as? UIActivityIndicatorView {
+            activityInticator.removeFromSuperview()
+        }
     }
 }

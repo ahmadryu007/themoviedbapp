@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Genres
 protocol GenreViewToPresenter {
     func getGenres()
 }
@@ -22,5 +23,24 @@ protocol GenrePresenterToInteractor {
 
 protocol GenreInteractorToPresenter {
     func genreListRequestSuccess(data: Genres)
+    func genreListRequestFail(code: String, message: String)
+}
+
+// MARK: - Moview
+protocol MovieViewToPresenter {
+    func getMovieList(genreId: Int)
+}
+
+protocol MoviePresenterToView {
+    func showError(code: String, message: String)
+    func movieListLoaded(list: Movies)
+}
+
+protocol MoviePresenterToInteractor {
+    func getMovieList(id: Int, page: Int)
+}
+
+protocol MovieInteractorToPresenter {
+    func movieListRequestSuccess(data: Movies)
     func genreListRequestFail(code: String, message: String)
 }

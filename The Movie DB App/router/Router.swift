@@ -8,6 +8,7 @@
 import UIKit
 
 class Router {
+    
     class func genreRoute() -> UIViewController {
         
         let interactor = GenreInteractor()
@@ -20,5 +21,23 @@ class Router {
         view.presenter = presenter
         
         return view
+    }
+    
+    class func movieRoute(genreId: Int, genreName: String) -> UIViewController {
+        
+        let interactor = MovieInteractor()
+        let presenter = MoviePresenter()
+        let view = MovieViewController()
+        
+        interactor.presenter = presenter
+        presenter.interactor = interactor
+        presenter.view = view
+        
+        view.presenter = presenter
+        view.genreId = genreId
+        view.genreName = genreName
+        
+        return view
+        
     }
 }

@@ -13,7 +13,9 @@ class Constants {
     static let url = "https://api.themoviedb.org"
     static let apiVersion = "3"
     static let baseUrl = Constants.url + "/" + apiVersion
+    static let imageBaseUrl = "https://image.tmdb.org/t/p/w200/"
     
     static let genreListPath = baseUrl + "/genre/movie/list"
+    static let movieListPath = baseUrl + "/discover/movie"
     
 }

@@ -63,6 +63,7 @@ extension GenreViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
         cell.textLabel?.text = data?.genres[indexPath.row].name
+        cell.accessoryType = .disclosureIndicator
         
         return cell
     }
@@ -72,7 +73,8 @@ extension GenreViewController: UITableViewDataSource {
 
 extension GenreViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let vc = Router.movieRoute(genreId: data?.genres[indexPath.row].id ?? 0, genreName: data?.genres[indexPath.row].name ?? "")
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
