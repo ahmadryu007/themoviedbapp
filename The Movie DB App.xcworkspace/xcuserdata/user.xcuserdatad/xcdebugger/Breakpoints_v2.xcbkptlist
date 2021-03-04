@@ -14,8 +14,8 @@
             filePath = "The Movie DB App/view/MovieViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
             landmarkName = "MovieCell"
             landmarkType = "3">
          </BreakpointContent>
@@ -30,10 +30,10 @@
             filePath = "The Movie DB App/view/MovieViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "MovieCell"
-            landmarkType = "3">
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "movieName"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -130,6 +130,86 @@
             endingLineNumber = "38"
             landmarkName = "hideBasicLoading(superView:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EAAE4152-3A2E-42FB-BF6B-6E699398B240"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "The Movie DB App/view/DetailMovieViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "videosLoaded(videos:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8526E668-4830-41A7-83B2-B47CFDBD9BFD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "The Movie DB App/interactor/DetailMovieInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "getVideosRequest(movieId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1CE39EB0-EFD7-46BB-978A-7EBCF815FE1A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "The Movie DB App/interactor/DetailMovieInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getVideosRequest(movieId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1CE39EB0-EFD7-46BB-978A-7EBCF815FE1A - 9272ccbc56c29915"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "The_Movie_DB_App.DetailMovieInteractor.getVideosRequest(movieId: Swift.Int) -&gt; ()"
+                  moduleName = "The Movie DB App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/other/excercise/ios/themoviedbapp/The%20Movie%20DB%20App/interactor/DetailMovieInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "830">
+               </Location>
+               <Location
+                  uuid = "1CE39EB0-EFD7-46BB-978A-7EBCF815FE1A - d4516d5e83a42c3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Swift.Optional&lt;Foundation.Data&gt;, Alamofire.AFError&gt;) -&gt; () in The_Movie_DB_App.DetailMovieInteractor.getVideosRequest(movieId: Swift.Int) -&gt; ()"
+                  moduleName = "The Movie DB App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/other/excercise/ios/themoviedbapp/The%20Movie%20DB%20App/interactor/DetailMovieInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "317">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -96,7 +96,8 @@ extension MovieViewController: UICollectionViewDataSource {
 extension MovieViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let vc = Router.detailMovieRoute(movie: data[indexPath.row])
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -184,6 +185,8 @@ class MovieCell: UICollectionViewCell {
         contentView.addSubview(movieName)
         movieName.topAnchor.constraint(equalTo: movieImage.bottomAnchor, constant: 7).isActive = true
         movieName.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+        movieName.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        movieName.widthAnchor.constraint(equalToConstant: 130).isActive = true
     }
     
     required init?(coder: NSCoder) {

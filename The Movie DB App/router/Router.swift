@@ -40,4 +40,21 @@ class Router {
         return view
         
     }
+    
+    class func detailMovieRoute(movie: Movie) -> UIViewController {
+        
+        let interactor = DetailMovieInteractor()
+        let presenter = DetailMoviePresenter()
+        let view = DetailMovieViewController()
+        
+        interactor.presenter = presenter
+        presenter.interactor = interactor
+        presenter.view = view
+        
+        view.presenter = presenter
+        view.movie = movie
+        
+        return view
+        
+    }
 }

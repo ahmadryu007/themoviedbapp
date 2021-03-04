@@ -6,8 +6,9 @@ target 'The Movie DB App' do
   use_frameworks!
 
   # Pods for The Movie DB App
-pod 'Alamofire', '~> 5.2'
+  pod 'Alamofire', '~> 5.2'
   pod 'SDWebImage','~> 5.10.0'
+  pod 'youtube-ios-player-helper'
 
   target 'The Movie DB AppTests' do
     inherit! :search_paths

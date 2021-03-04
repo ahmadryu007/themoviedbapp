@@ -17,5 +17,6 @@ class Constants {
     
     static let genreListPath = baseUrl + "/genre/movie/list"
     static let movieListPath = baseUrl + "/discover/movie"
+    static let videoListPath = baseUrl + "/movie/"
     
 }

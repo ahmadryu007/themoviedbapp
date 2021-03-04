@@ -26,7 +26,7 @@ protocol GenreInteractorToPresenter {
     func genreListRequestFail(code: String, message: String)
 }
 
-// MARK: - Moview
+// MARK: - Movie
 protocol MovieViewToPresenter {
     func getMovieList(genreId: Int)
 }
@@ -43,4 +43,23 @@ protocol MoviePresenterToInteractor {
 protocol MovieInteractorToPresenter {
     func movieListRequestSuccess(data: Movies)
     func genreListRequestFail(code: String, message: String)
+}
+
+// MARK: - Detail Movie
+protocol DetailMovieViewToPresenter {
+    func getVideos(movieId: Int)
+}
+
+protocol DetailMoviePresenterToView {
+    func showError(code: String, message: String)
+    func videosLoaded(videos: Videos)
+}
+
+protocol DetailMoviePresenterToInteractor {
+    func getVideosRequest(movieId: Int)
+}
+
+protocol DetailMovieInteractorToPresenter {
+    func videosRequestSuccess(data: Videos)
+    func videosRequestFail(code: String, message: String)
 }
