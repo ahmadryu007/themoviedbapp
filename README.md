@@ -3,7 +3,7 @@
 
 Simple application for showing list of movie from api.themoviedb.org
 
-[![GIF](https://github.com/ahmadryu007/themoviedbapp/raw/main/themoviedbapp.mov)](https://github.com/ahmadryu007/themoviedbapp/raw/main/themoviedbapp.mov)
+[![GIF](https://j.gifs.com/mOBEwR.gif)](https://j.gifs.com/mOBEwR.gif)
 
 This project using
   - VIPER Design Pattern
