@@ -120,7 +120,13 @@ class DetailMovieViewController: UIViewController {
         presenter?.getVideos(movieId: movie.id)
         Utility.basicLoading(superView: footerView)
         
-        
+        let rightItemBar = UIBarButtonItem(title: "Review", style: .plain, target: self, action: #selector(goToReview(sender:)))
+        navigationItem.setRightBarButton(rightItemBar, animated: true)
+    }
+    
+    @objc func goToReview(sender: Any){
+        let vc = Router.reviewRoute(movieId: movie.id)
+        present(vc, animated: true, completion: nil)
     }
 }
 

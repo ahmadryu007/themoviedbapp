@@ -29,8 +29,6 @@ class DetailMovieInteractor: DetailMoviePresenterToInteractor {
                     return
                 }
                 
-                print(String(data: responseData, encoding: .utf8))
-                
                 do {
                     
                     let videos = try JSONDecoder().decode(Videos.self, from: responseData)

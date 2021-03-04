@@ -57,4 +57,20 @@ class Router {
         return view
         
     }
+    
+    class func reviewRoute(movieId: Int) -> UIViewController {
+        
+        let interactor = ReviewInteractor()
+        let presenter = ReviewPresenter()
+        let view = ReviewViewController()
+        
+        interactor.presenter = presenter
+        presenter.interactor = interactor
+        presenter.view = view
+        
+        view.presenter = presenter
+        view.movieId = movieId
+        
+        return view
+    }
 }

@@ -30,6 +30,10 @@
 		CE01814425F145D50098DFE1 /* DetailMovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01814325F145D50098DFE1 /* DetailMovieInteractor.swift */; };
 		CE01814925F1473F0098DFE1 /* DetailMoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01814825F1473F0098DFE1 /* DetailMoviePresenter.swift */; };
 		CE01814E25F147B40098DFE1 /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01814D25F147B40098DFE1 /* DetailMovieViewController.swift */; };
+		CE01815C25F158B30098DFE1 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01815B25F158B30098DFE1 /* Reviews.swift */; };
+		CE01816125F159F50098DFE1 /* ReviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01816025F159F50098DFE1 /* ReviewInteractor.swift */; };
+		CE01816625F15B060098DFE1 /* ReviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01816525F15B060098DFE1 /* ReviewPresenter.swift */; };
+		CE01816B25F15BBC0098DFE1 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01816A25F15BBC0098DFE1 /* ReviewViewController.swift */; };
 		CECDCE259D1B3795494D888F /* Pods_The_Movie_DB_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F295D5935BE312712F41D698 /* Pods_The_Movie_DB_AppTests.framework */; };
 		F13E8EFC91044B237F3CA600 /* Pods_The_Movie_DB_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDD9F09E1480F4EFBD382D4 /* Pods_The_Movie_DB_App.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +91,10 @@
 		CE01814325F145D50098DFE1 /* DetailMovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieInteractor.swift; sourceTree = "<group>"; };
 		CE01814825F1473F0098DFE1 /* DetailMoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMoviePresenter.swift; sourceTree = "<group>"; };
 		CE01814D25F147B40098DFE1 /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
+		CE01815B25F158B30098DFE1 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		CE01816025F159F50098DFE1 /* ReviewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewInteractor.swift; sourceTree = "<group>"; };
+		CE01816525F15B060098DFE1 /* ReviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPresenter.swift; sourceTree = "<group>"; };
+		CE01816A25F15BBC0098DFE1 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		F295D5935BE312712F41D698 /* Pods_The_Movie_DB_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Movie_DB_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3518837512858C7B5B5D021 /* Pods-The Movie DB AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Movie DB AppTests.debug.xcconfig"; path = "Target Support Files/Pods-The Movie DB AppTests/Pods-The Movie DB AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +206,7 @@
 				CE01809625F0C93D0098DFE1 /* GenreViewController.swift */,
 				CE01813125F12ECD0098DFE1 /* MovieViewController.swift */,
 				CE01814D25F147B40098DFE1 /* DetailMovieViewController.swift */,
+				CE01816A25F15BBC0098DFE1 /* ReviewViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -208,6 +217,7 @@
 				CE01810D25F0DA140098DFE1 /* GenreInteractor.swift */,
 				CE01812725F12B9D0098DFE1 /* MovieInteractor.swift */,
 				CE01814325F145D50098DFE1 /* DetailMovieInteractor.swift */,
+				CE01816025F159F50098DFE1 /* ReviewInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -218,6 +228,7 @@
 				CE01810825F0DA060098DFE1 /* GenrePresenter.swift */,
 				CE01812C25F12DFF0098DFE1 /* MoviePresenter.swift */,
 				CE01814825F1473F0098DFE1 /* DetailMoviePresenter.swift */,
+				CE01816525F15B060098DFE1 /* ReviewPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -228,6 +239,7 @@
 				CE0180F325F0D9830098DFE1 /* Genres.swift */,
 				CE01812225F12A6A0098DFE1 /* Movies.swift */,
 				CE01813E25F1449F0098DFE1 /* Videos.swift */,
+				CE01815B25F158B30098DFE1 /* Reviews.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -487,11 +499,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE01816625F15B060098DFE1 /* ReviewPresenter.swift in Sources */,
 				CE01813225F12ECD0098DFE1 /* MovieViewController.swift in Sources */,
+				CE01815C25F158B30098DFE1 /* Reviews.swift in Sources */,
 				CE01812325F12A6A0098DFE1 /* Movies.swift in Sources */,
 				CE01810925F0DA060098DFE1 /* GenrePresenter.swift in Sources */,
 				CE01814925F1473F0098DFE1 /* DetailMoviePresenter.swift in Sources */,
 				CE01813F25F1449F0098DFE1 /* Videos.swift in Sources */,
+				CE01816125F159F50098DFE1 /* ReviewInteractor.swift in Sources */,
 				CE01814425F145D50098DFE1 /* DetailMovieInteractor.swift in Sources */,
 				CE01810E25F0DA140098DFE1 /* GenreInteractor.swift in Sources */,
 				CE01812825F12B9D0098DFE1 /* MovieInteractor.swift in Sources */,
@@ -502,6 +517,7 @@
 				CE01813725F139FE0098DFE1 /* MovieExtension.swift in Sources */,
 				CE01812D25F12DFF0098DFE1 /* MoviePresenter.swift in Sources */,
 				CE01810425F0D9E40098DFE1 /* Router.swift in Sources */,
+				CE01816B25F15BBC0098DFE1 /* ReviewViewController.swift in Sources */,
 				CE01809725F0C93D0098DFE1 /* GenreViewController.swift in Sources */,
 				CE01809325F0C93D0098DFE1 /* AppDelegate.swift in Sources */,
 				CE01811325F0DCF60098DFE1 /* Constants.swift in Sources */,

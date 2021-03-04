@@ -63,3 +63,22 @@ protocol DetailMovieInteractorToPresenter {
     func videosRequestSuccess(data: Videos)
     func videosRequestFail(code: String, message: String)
 }
+
+// MARK: - Review
+protocol ReviewViewToPresenter {
+    func getReview(movieId: Int)
+}
+
+protocol ReviewPresenterToView {
+    func showError(code: String, message: String)
+    func reviewLoaded(review: Reviews)
+}
+
+protocol ReviewPresenterToInteractor {
+    func getReviewRequest(movieId: Int, page: Int)
+}
+
+protocol ReviewInteractorToPresenter {
+    func reviewRequestSuccess(data: Reviews)
+    func reviewRequestFail(code: String, message: String)
+}
